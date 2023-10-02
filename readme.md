@@ -19,17 +19,17 @@ Before you can use the application, ensure you have the following prerequisites:
 
 ### Running the Utility
 
-If can choose between two options
+You can choose between two options
 
 #### Java
 
-1. Build the application: mvn clean install
-2. run: java -jar target/pricing-discount-demo-0.0.1-SNAPSHOT.jar
+1. Build the application: `mvn clean install`
+2. run: `java -jar target/pricing-discount-demo-0.0.1-SNAPSHOT.jar`
 
 #### Docker
 
-1. Build the application and image: mvn clean package jib:dockerBuild
-2. run: docker run -p 8080:8080 pricing-discount-demo
+1. Build the application and image: `mvn clean package jib:dockerBuild`
+2. run: `docker run -p 8080:8080 pricing-discount-demo`
 
 The service will be acessible in http://localhost:8080
 
@@ -51,7 +51,7 @@ http://localhost:8080/actuator/health/readiness
 
 #### Public
 
-The following endpoints can be use to get the discounted price using two different policies.
+The following endpoints can be used to get the discounted price using two different policies.
 
 1. Endpoint that returns a percentage based discounted price for a given product
 
@@ -65,7 +65,7 @@ The following endpoints can be use to get the discounted price using two differe
 
 #### Authenticated
 
-The following endpoints can be use to manage the discount configurations.
+The following endpoints can be used to manage the discount configurations.
 
 Note: This demo application is using basic authentication. User credentials can be found on `src/main/resources/application.properties`
 
